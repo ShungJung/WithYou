@@ -1,0 +1,35 @@
+{
+    "name": "@withyou/backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.ts",
+    "scripts": {
+        "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+        "build": "tsc -p tsconfig.json",
+        "start": "node dist/index.js",
+        "clean": "rm -rf dist",
+        "test": "jest",
+        "test:dev": "jest --watchAll --verbose",
+        "test:e2e": "jest --config jest.config.e2e.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "type": "commonjs",
+    "dependencies": {
+        "@prisma/adapter-pg": "^7.2.0",
+        "@prisma/client": "^7.2.0",
+        "dotenv": "^16.6.1",
+        "express": "^5.2.1",
+        "pg": "^8.16.3"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.6",
+        "@types/node": "^24.10.4",
+        "@types/pg": "^8.16.0",
+        "@types/supertest": "^6.0.3",
+        "prisma": "^7.2.0",
+        "supertest": "^7.1.4",
+        "ts-node-dev": "^2.0.0"
+    }
+}

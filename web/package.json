@@ -1,0 +1,29 @@
+{
+  "name": "@withyou/frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:dev": "jest --watchAll --verbose",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^24.10.4",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "globals": "^16.5.0",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.2.4"
+  }
+}
